@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detalleContacto">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/confirmar_datos"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/txtNombrePut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo"
+        android:enabled="false"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:textColor="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:textColorHint="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/txtCalendarPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:textColor="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:layout_below="@+id/txtNombrePut" />
+
+    <TextView
+        android:id="@+id/txtTelefonoPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefono"
+        android:enabled="false"
+        android:textColor="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:layout_below="@+id/txtCalendarPut"/>
+
+    <TextView
+        android:id="@+id/txtEmailPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:enabled="false"
+        android:textColor="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:layout_below="@+id/txtTelefonoPut"/>
+
+    <TextView
+        android:id="@+id/txtDescripcionPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmailPut"
+        android:enabled="false"
+        android:textColor="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:hint="@string/descripcion_contacto"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_datos"
+        android:layout_below="@+id/txtDescripcionPut"
+        android:theme="@style/botones"
+        android:onClick="Editar"/>
+
+
+
+
+</RelativeLayout>
